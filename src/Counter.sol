@@ -2,12 +2,12 @@
 pragma solidity ^0.8.13;
 
 contract Counter {
-    uint256 public number;
-    uint256 constant public totalSupply = 1000;
+    uint256 public number; // 1
+    uint256 public constant totalSupply = 1000; // 2
 
-    uint256 public price;
+    uint256 public price; // 3
 
-    address public owner;
+    address public owner; // 4
 
     constructor(uint256 _price) {
         owner = msg.sender;
@@ -36,5 +36,3 @@ contract Counter {
         number++;
     }
 }
-
-
